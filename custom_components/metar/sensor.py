@@ -30,7 +30,7 @@ SENSOR_TYPES = {
     'visibility': ['Visibility', None],
     'precipitation': ['Precipitation', None],
     'sky': ['Sky', None],
-    'dewpt': ['Dew Point', None],
+    'dewpt': ['Dew Point', '°C'],
     'humidity': ['Humidity', '%'],
 }
 
