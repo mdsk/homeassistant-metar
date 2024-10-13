@@ -6,7 +6,7 @@ from datetime import timedelta
 from homeassistant.helpers.config_validation import PLATFORM_SCHEMA
 from homeassistant.helpers.entity import Entity
 from homeassistant.util import Throttle
-from homeassistant.const import ATTR_ATTRIBUTION, ATTR_TIME, CONF_MONITORED_CONDITIONS, TEMP_CELSIUS
+from homeassistant.const import ATTR_ATTRIBUTION, ATTR_TIME, CONF_MONITORED_CONDITIONS, UnitOfTemperature.CELSIUS
 try:
     from urllib2 import urlopen
 except:
@@ -30,7 +30,7 @@ SENSOR_TYPES = {
     'visibility': ['Visibility', None],
     'precipitation': ['Precipitation', None],
     'sky': ['Sky', None],
-    'dewpt': ['Dew Point', None],
+    'dewpt': ['Dew Point', '°C'],
     'humidity': ['Humidity', '%'],
 }
 
